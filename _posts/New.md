@@ -97,7 +97,7 @@ Fun(day,gender)
 ---
   首先我们使用burpsuite对移动端进行抓包。关于对移动端进行抓包这里不做赘述（原理就是在同个局域网中让手机挂上PC端的代理）。然后让手机访问查询
 校园网流量的网站[10.255.44.1:8800](10.255.44.1:8800).抓包所得结果如下:
-!()[VonLYC.github.io/img/BLOG1.png]
+!()[http://VonLYC.github.io/img/BLOG1.png]
 
 
 
