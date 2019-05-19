@@ -97,7 +97,22 @@ Fun(day,gender)
 ---
   首先我们使用burpsuite对移动端进行抓包。关于对移动端进行抓包这里不做赘述（原理就是在同个局域网中让手机挂上PC端的代理）。然后让手机访问查询
 校园网流量的网站[10.255.44.1:8800](10.255.44.1:8800).抓包所得结果如下:
-!()[http://VonLYC.github.io/img/BLOG1.png]
+![](http://VonLYC.github.io/img/BLOG1.png)
+  我们可以看出，账号密码是进行明文传输，这给我们的工作提供了便利。我们右键，将其send to intruder.在Positions中将password添加为一个攻击点。
+![](http://VonLYC.github.io/img/BLOG2.png)
+  再在Payloads中选择我们生成的字典。
+![](http://VonLYC.github.io/img/BLOG3.png)
+  再在Options中选择线程(Professional版好像默认为5)。之后就可以Start Attack了。
+![](http://VonLYC.github.io/img/BLOG4.png)
+  接下来的事我们就只需要让burp suite自动完成了。我们只需要在Length中筛选出与其他不同的一项，其所对应的payload就是用户的密码。
+![](http://VonLYC.github.io/img/BLOG5.png)
+  一般来说,如果我们知道要破解账号的生日的话，生成的字典只有5500个payload，这样一般5分钟内可以得出密码。而如果不知道对方的生日，生成的字典的
+payload则有100000+个，一般就需要1，2个小时才可以得出密码。所以如果结合社会工程学从对方QQ之类的东西获取到对方的生日则可以大大的提高效率。
+
+总结
+---
+  这是我写的第一篇博客，技术含量不高。纯粹是为了记录一下这项小Practice。希望以后能够通过不断的学习正确多更一些高质量的文章吧。
+
 
 
 
