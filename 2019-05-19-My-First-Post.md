@@ -93,6 +93,7 @@ day = input('Please input the day: ')
 gender = input('Please input the gender(Male or Female): ')
 Fun(day,gender)	
 ```
+
 实战爆破
 ---
   首先我们使用burpsuite对移动端进行抓包。关于对移动端进行抓包这里不做赘述（原理就是在同个局域网中让手机挂上PC端的代理）。然后让手机访问查询
