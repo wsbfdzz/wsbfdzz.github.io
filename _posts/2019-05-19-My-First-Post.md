@@ -88,10 +88,11 @@ def Fun(birthday = '',gender = ''):
 						num += 1
 	print('Dictionary generation was successful with a total number of '+str(num))
 					
-					
-day = input('Please input the day: ')
-gender = input('Please input the gender(Male or Female): ')
-Fun(day,gender)	
+	
+if '__name__'=='__main__':
+	day = input('Please input the day: ')
+	gender = input('Please input the gender(Male or Female): ')
+	Fun(day,gender)	
 ```
 
 实战爆破
