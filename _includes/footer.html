@@ -144,7 +144,7 @@
   window.setInterval('counter()',1000);
   function counter(){
     var date=new Date();
-    var startDate=new Date(2019,5,8,0,0,0);
+    var startDate=new Date(2017,11,29,0,0,0);
     var time=(date-startDate)/1000;
     var day=Math.floor(time/(24*60*60));
     var hour=Math.floor(time%(24*60*60)/(60*60));
@@ -199,6 +199,7 @@
      right within the Markdown is landed in Github Pages, 
      From V1.6, There is no need for Highlight.js, 
      so Huxblog drops it officially.
+
      - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
      - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
      - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
@@ -242,11 +243,13 @@
     // dynamic User by Hux
     var _gaId = '{{ site.ga_track_id }}';
     var _gaDomain = '{{ site.ga_domain }}';
+
     // Originial
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
     ga('create', _gaId, _gaDomain);
     ga('send', 'pageview');
 </script>
@@ -258,6 +261,7 @@
 <script>
     // dynamic User by Hux
     var _baId = '{{ site.ba_track_id }}';
+
     // Originial
     var _hmt = _hmt || [];
     (function() {
@@ -287,12 +291,15 @@
         });
         return true;    
     }
+
     generateCatalog(".catalog-body");
+
     // toggle side catalog
     $(".catalog-toggle").click((function(e){
         e.preventDefault();
         $('.side-catalog').toggleClass("fold")
     }))
+
     /*
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
      * Fork by Hux to support padding
@@ -314,3 +321,4 @@
     });
 </script>
 {% endif %}
+
