@@ -98,11 +98,16 @@ service-worker: true
 
 # Friends
 friends: [
-    {
-        title: "XDSEC",
-        href: "https://www.xdsec.org/"
-     },{
-        title: "Hed9eh0g",
-        href: "http://47.103.22.65/"
+     {
+        title: "Von's Blog",
+        href: "http://www.v0n.top/"
+     },
+     {
+        title: "Yushen's Blog",
+        href: "https://437436999.github.io/"
+     },
+     {
+        title: "AcFun",
+        href: "https://www.acfun.cn/"
      }
 ]
