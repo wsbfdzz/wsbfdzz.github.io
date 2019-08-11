@@ -1,13 +1,13 @@
 # Site settings
-title: Von's Blog
-SEOTitle: Von的博客 | Von Blog
+title: 小雨时宁的游戏小屋
+SEOTitle: 小雨时宁的博客 | 游戏小屋
 header-img: img/post-bg-desk.jpg
-email: lyc824342218@gmail.com
-description: "Quis custodiet ipsos custodes?"
-keyword: "Von, Von Blog, Von的博客, luyanchen, 卢彦臣, CTF, security, CS"
-url: "https://VonLYC.github.io"          # your host, for absolute URL
+email: 1640991897@qq.com
+description: "一个游戏爱好者的博客"
+keyword: "小雨时宁的博客, 小雨时宁, C, C#, Unity-3D, 独立游戏, 西电Nova独游社, 金光布袋戏"
+url: "https://wsbfdzz.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/VonLYC/VonLYC.github.io.git" # you code repository
+github_repo: "https://github.com/wsbfdzz/wsbfdzz.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -20,7 +20,7 @@ sidebar-about-description: "Goals determine what you going to be!"
 RSS: false
 # weibo_username:     qiubaiying
 # zhihu_username:     qiubaiying
-github_username:    VonLYC
+github_username:    wsbfdzz
 #facebook_username:  baiying.qiu.7
 #jianshu_username:   e71990ada2fd
 #twitter_username:   qiubaiying
@@ -86,7 +86,7 @@ kramdown:
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
 
 
 
